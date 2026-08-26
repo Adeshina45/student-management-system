@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentMS - Register Student</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                S
+            </div>
+
+            <div>
+
+                <h2>StudentMS</h2>
+
+                <span>
+                    Management System
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a
+                    href="students.html"
+                    class="nav-item"
+            >
+
+                <span>▣</span>
+
+                Dashboard
+
+            </a>
+
+
+            <a
+                    href="index.html"
+                    class="nav-item active"
+            >
+
+                <span>＋</span>
+
+                Register Student
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <p>
+                Student Management System
+            </p>
+
+            <span>
+                Version 1.0
+            </span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ========================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div>
+
+                <p class="welcome-text">
+                    Student Management
+                </p>
+
+                <h1>
+                    Register Student
+                </h1>
+
+            </div>
+
+
+            <a
+                    href="students.html"
+                    class="dashboard-button"
+            >
+
+                ← Back to Dashboard
+
+            </a>
+
+        </header>
+
+
+        <!-- ========================= -->
+        <!-- REGISTRATION CARD -->
+        <!-- ========================= -->
+
+        <section class="registration-card">
+
+
+            <div class="registration-header">
+
+                <div class="registration-icon">
+                    +
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        Student Information
+                    </h2>
+
+                    <p>
+                        Enter the student's information
+                        to register them into the system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- FORM -->
+            <!-- ========================= -->
+
+            <form id="studentForm">
+
+
+                <div class="form-grid">
+
+
+                    <!-- FIRST NAME -->
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                        </label>
+
+                        <input
+                                type="text"
+                                id="firstName"
+                                placeholder="Enter first name"
+                                required
+                        >
+
+                    </div>
+
+
+                    <!-- LAST NAME -->
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                        </label>
+
+                        <input
+                                type="text"
+                                id="lastName"
+                                placeholder="Enter last name"
+                                required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter email address"
+                                required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phoneNumber">
+                            Phone Number
+                        </label>
+
+                        <input
+                                type="tel"
+                                id="phoneNumber"
+                                placeholder="08012345678"
+                                required
+                        >
+
+                    </div>
+
+
+                    <!-- REGISTRATION NUMBER -->
+
+                    <div class="form-group">
+
+                        <label for="registrationNumber">
+                            Registration Number
+                        </label>
+
+                        <input
+                                type="text"
+                                id="registrationNumber"
+                                placeholder="e.g. CSC/2026/001"
+                                required
+                        >
+
+                    </div>
+
+
+                    <!-- GENDER -->
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DATE OF BIRTH -->
+
+                    <div class="form-group">
+
+                        <label for="dateOfBirth">
+                            Date of Birth
+                        </label>
+
+                        <input
+                                type="date"
+                                id="dateOfBirth"
+                        >
+
+                    </div>
+
+
+                    <!-- FACULTY -->
+
+                    <div class="form-group">
+
+                        <label for="faculty">
+                            Faculty
+                        </label>
+
+                        <input
+                                type="text"
+                                id="faculty"
+                                placeholder="e.g. Computing and Informatics"
+                        >
+
+                    </div>
+
+
+                    <!-- DEPARTMENT -->
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <input
+                                type="text"
+                                id="department"
+                                placeholder="e.g. Computer Science"
+                        >
+
+                    </div>
+
+
+                    <!-- LEVEL -->
+
+                    <div class="form-group">
+
+                        <label for="level">
+                            Level
+                        </label>
+
+                        <select id="level">
+
+                            <option value="">
+                                Select Level
+                            </option>
+
+                            <option value="100">
+                                100 Level
+                            </option>
+
+                            <option value="200">
+                                200 Level
+                            </option>
+
+                            <option value="300">
+                                300 Level
+                            </option>
+
+                            <option value="400">
+                                400 Level
+                            </option>
+
+                            <option value="500">
+                                500 Level
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SESSION -->
+
+                    <div class="form-group">
+
+                        <label for="session">
+                            Academic Session
+                        </label>
+
+                        <select id="session">
+
+                            <option value="">
+                                Select Session
+                            </option>
+
+                            <option value="2025/2026">
+                                2025/2026
+                            </option>
+
+                            <option value="2026/2027">
+                                2026/2027
+                            </option>
+
+                            <option value="2027/2028">
+                                2027/2028
+                            </option>
+
+                            <option value="2028/2029">
+                                2028/2029
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-group full">
+
+                        <label for="address">
+                            Home Address
+                        </label>
+
+                        <textarea
+                                id="address"
+                                placeholder="Enter student's home address"
+                                rows="3"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- GUARDIAN NAME -->
+
+                    <div class="form-group">
+
+                        <label for="guardianName">
+                            Parent / Guardian Name
+                        </label>
+
+                        <input
+                                type="text"
+                                id="guardianName"
+                                placeholder="Enter parent or guardian name"
+                        >
+
+                    </div>
+
+
+                    <!-- GUARDIAN PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="guardianPhone">
+                            Parent / Guardian Phone
+                        </label>
+
+                        <input
+                                type="tel"
+                                id="guardianPhone"
+                                placeholder="08012345678"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- FORM ACTIONS -->
+                <!-- ========================= -->
+
+                <div class="form-actions">
+
+                    <button
+                            type="reset"
+                            class="clear-button"
+                    >
+                        Clear Form
+                    </button>
+
+
+                    <button
+                            type="submit"
+                            class="register-button"
+                    >
+                        Register Student
+                    </button>
+
+                </div>
+
+
+            </form>
+
+
+            <!-- MESSAGE -->
+
+            <p id="message"></p>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js?v=4"></script>
+
+</body>
+
+</html>
